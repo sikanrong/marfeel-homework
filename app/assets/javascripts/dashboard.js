@@ -144,7 +144,7 @@ $dashboardApp.controller('dashboardCtrl', function ($scope) {
             scope.render = function(data) {
                 svg.selectAll('*').remove();
 
-                var ratio=(data.tablet_share / data.total_amount);
+                var ratio=(data.smartphone_share / data.total_amount);
                 var endAngle=Math.min(360*ratio,360);
                 endAngle=endAngle * Math.PI/180;
 
