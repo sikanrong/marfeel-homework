@@ -1,0 +1,71 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+* {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.widgetGraphContainer {
+    float: left;
+    width: 260px;
+    border-bottom: #CCCCCC solid 1px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 10px;
+}
+
+.widgetGraphContainer .graph{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.widgetGraphContainer .title_label{
+    fill: #AAA;
+    font-size: 16px;
+    transform: translate(0px,-14px);
+}
+
+.widgetGraphContainer .total_amount_label{
+    fill: #333;
+    font-size: 21px;
+    transform: translate(0px,10px);
+}
+
+.widgetGraphContainer .widgetBottomData .subData{
+    width: 50%;
+}
+
+.widgetGraphContainer .widgetBottomData .subData *{
+    font-size: 12px;
+}
+
+.widgetGraphContainer .widgetBottomData .subData label{
+    display:block;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.widgetGraphContainer .widgetBottomData .subData .subTotal{
+    color: #CCC;
+}
+
+.widgetGraphContainer .widgetBottomData .subData.tabletData{
+    float:left;
+}
+
+.widgetGraphContainer .widgetBottomData .subData.smartphoneData{
+    float:right;
+    text-align: right;
+}

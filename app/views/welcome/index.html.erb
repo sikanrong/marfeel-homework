@@ -1,0 +1,31 @@
+<div class="widgetGraphContainer" ng-repeat="widget in dashboard_widgets">
+    <widget-graph data="widget"></widget-graph>
+</div>
+
+
+<!--Inline template for the widget class-->
+<div class="widgetGraphTemplate">
+  <div class="graph">
+  </div>
+  <div class="widgetBottomData">
+    <div class="subData tabletData">
+      <label ng-style="{'color': primaryColor}">Tablet</label>
+      <span class="percent">
+        {{getPercentOfTotal(data.tablet_share)}}
+      </span>
+      <span class="subTotal">
+        {{widgetNumberFmt(data.tablet_share)}}
+      </span>
+
+    </div>
+    <div class="subData smartphoneData">
+      <label ng-style="{'color': secondaryColor}">Smartphone</label>
+      <span class="percent">
+        {{getPercentOfTotal(data.smartphone_share)}}
+      </span>
+      <span class="subTotal">
+        {{widgetNumberFmt(data.smartphone_share)}}
+      </span>
+    </div>
+  </div>
+</div>
