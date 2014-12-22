@@ -223,6 +223,6 @@ $dashboardApp.directive('widgetGraph', function() {
 
 
         },
-        template: $(".widgetGraphTemplate") //inline template element for the widgetGraph
+        templateUrl: "/dashboard/widget_graph_template"
     };
 });
